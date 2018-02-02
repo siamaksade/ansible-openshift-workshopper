@@ -1,4 +1,5 @@
 Ansible Role: Workshopper on OpenShift
+[![Build Status](https://travis-ci.org/siamaksade/ansible-openshift-workshopper.svg?branch=master)](https://travis-ci.org/siamaksade/ansible-openshift-workshopper)
 =========
 
 Ansible Role for deploying [Workshopper](https://github.com/openshift-evangelists/workshopper) on OpenShift as the instruction guidebook for demos and workshops.
