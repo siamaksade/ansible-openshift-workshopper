@@ -27,7 +27,7 @@ name: Example Playbook
 hosts: localhost
 tasks:
 - import_role:
-    name: openshift_workshopper
+    name: siamaksade.openshift_workshopper
   vars:
     project_name: "cicd-project"
     workshopper_content_url_prefix: https://raw.githubusercontent.com/siamaksade/coolstore-demo-guides/openshift-3.7
