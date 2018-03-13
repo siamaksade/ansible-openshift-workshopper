@@ -1,5 +1,5 @@
 ---
-## Deploy CoolStore Demo Guide
+## Deploy Workshopper Guide
 
 # create project
 - name: check if workshopper project {{ project_name }} exists

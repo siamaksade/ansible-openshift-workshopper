@@ -1,5 +1,5 @@
 ---
-## Deploy CoolStore Demo Guide
+## Deploy Workshopper Guide
 
 - name: deploy workshopper guide
   shell: |
@@ -12,8 +12,8 @@
   shell: "{{ openshift_cli }} set env dc/guides {{ item.key }}={{ item.value }} -n {{ project_name }}"
   with_dict: "{{ workshopper_env_vars }}"
 
-- name: set demo guide probes
+- name: set workshopper probes
   shell: "{{ openshift_cli }} set probe dc/guides -n {{ project_name }} --readiness --liveness --get-url=http://:8080/ --failure-threshold=5 --initial-delay-seconds=30"
 
-- name: set demo guide cpu and mem resources
+- name: set workshopper cpu and mem resources
   shell: "{{ openshift_cli }} set resources dc/guides --limits=cpu=500m,memory=1Gi --requests=cpu=100m,memory=512Mi -n {{ project_name }}"
