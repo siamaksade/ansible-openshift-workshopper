@@ -14,6 +14,10 @@ Role Variables
 |`workshopper_content_url_prefix`| https://raw.githubusercontent.com/osevg/workshopper-content/master | Workshop content prefix url |
 |`workshopper_workshop_urls`     | {{ workshopper_content_url_prefix }}/_workshops/training.yml       | Comma-separated workshop urls |
 |`workshopper_env_vars`          | {}                  | Environment variables set on the workshopper container as configuration |   
+|`min_memory`                    | 128Mi               | Memory request |   
+|`max_memory`                    | 512Mi               | Memory limit |   
+|`min_cpu`                       | 0                   | CPU request |   
+|`max_cpu`                       | 0                   | CPU limit  |   
 |`project_name`                  | workshopper         | OpenShift project name for the workshopper container  |
 |`project_display_name`          | Workshopper         | OpenShift project display name for the workshopper container  |
 |`project_desc`                  | Workshopper Guides  | OpenShift project description for the workshopper container |
