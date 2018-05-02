@@ -32,7 +32,7 @@
 
 # deploy workshopper guides
 - name: check if workshopper guide exists
-  shell: "{{ openshift_cli }} get service guides -n {{ project_name }}"
+  shell: "{{ openshift_cli }} get service {{ workshopper_name }} -n {{ project_name }}"
   register: guides_exist_result
   ignore_errors: true
   changed_when: false
