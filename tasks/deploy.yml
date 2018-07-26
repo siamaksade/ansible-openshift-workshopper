@@ -3,7 +3,7 @@
 
 - name: deploy workshopper
   shell: |
-    {{ openshift_cli }} new-app --name={{ workshopper_name }} --docker-image=osevg/workshopper:{{ workshopper_image_version }} \
+    {{ openshift_cli }} new-app --name={{ workshopper_name }} --docker-image=quay.io/osevg/workshopper:{{ workshopper_image_version }} \
         -e WORKSHOPS_URLS={{ workshopper_workshop_urls }} \
         -e CONTENT_URL_PREFIX={{ workshopper_content_url_prefix }} \
         -n {{ project_name }}
